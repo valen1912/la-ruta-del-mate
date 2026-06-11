@@ -57,14 +57,14 @@
                 <h1 class="seccion-titulo-principal">TEST</h1>
             </div>
 
-            <form class="test-form" action="#" method="post">
+            <form class="test-form" action="#" method="post" novalidate>
                 
                 <div class="test-question">
                     <p class="test-progress">1 de 10</p>
                     <fieldset class="test-card">
                         <legend class="test-question-title">Como tomas mate normalmente?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta1-solo" name="pregunta1" value="solo" required>
+                            <input class="test-radio" type="radio" id="pregunta1-solo" name="pregunta1" value="solo">
                             <label class="test-label" for="pregunta1-solo">Solo/a</label>
                         </div>
                         <div class="test-option">
@@ -87,7 +87,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que estilo te gusta mas?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta2-tradicional" name="pregunta2" value="tradicional" required>
+                            <input class="test-radio" type="radio" id="pregunta2-tradicional" name="pregunta2" value="tradicional">
                             <label class="test-label" for="pregunta2-tradicional">Tradicional</label>
                         </div>
                         <div class="test-option">
@@ -110,7 +110,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que valoras mas?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta3-diseno" name="pregunta3" value="diseno" required>
+                            <input class="test-radio" type="radio" id="pregunta3-diseno" name="pregunta3" value="diseno">
                             <label class="test-label" for="pregunta3-diseno">Diseño</label>
                         </div>
                         <div class="test-option">
@@ -133,7 +133,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Donde tomas mas mate?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta4-casa" name="pregunta4" value="en-casa" required>
+                            <input class="test-radio" type="radio" id="pregunta4-casa" name="pregunta4" value="en-casa">
                             <label class="test-label" for="pregunta4-casa">En casa</label>
                         </div>
                         <div class="test-option">
@@ -156,7 +156,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que tipo de sabores preferis?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta5-suaves" name="pregunta5" value="suaves" required>
+                            <input class="test-radio" type="radio" id="pregunta5-suaves" name="pregunta5" value="suaves">
                             <label class="test-label" for="pregunta5-suaves">Suaves</label>
                         </div>
                         <div class="test-option">
@@ -179,7 +179,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que ambiente te representa mas?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta6-campo" name="pregunta6" value="campo" required>
+                            <input class="test-radio" type="radio" id="pregunta6-campo" name="pregunta6" value="campo">
                             <label class="test-label" for="pregunta6-campo">Campo</label>
                         </div>
                         <div class="test-option">
@@ -202,7 +202,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Como describirias tu rutina?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta7-tranquila" name="pregunta7" value="tranquila" required>
+                            <input class="test-radio" type="radio" id="pregunta7-tranquila" name="pregunta7" value="tranquila">
                             <label class="test-label" for="pregunta7-tranquila">Tranquila</label>
                         </div>
                         <div class="test-option">
@@ -225,7 +225,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que color te atrae mas?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta8-verde-oliva" name="pregunta8" value="verde-oliva" required>
+                            <input class="test-radio" type="radio" id="pregunta8-verde-oliva" name="pregunta8" value="verde-oliva">
                             <label class="test-label" for="pregunta8-verde-oliva">Verde oliva</label>
                         </div>
                         <div class="test-option">
@@ -248,7 +248,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Como preferis tus objetos?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta9-clasicos" name="pregunta9" value="clasicos" required>
+                            <input class="test-radio" type="radio" id="pregunta9-clasicos" name="pregunta9" value="clasicos">
                             <label class="test-label" for="pregunta9-clasicos">Clásicos</label>
                         </div>
                         <div class="test-option">
@@ -271,7 +271,7 @@
                     <fieldset class="test-card">
                         <legend class="test-question-title">Que experiencia buscas al tomar mate?</legend>
                         <div class="test-option">
-                            <input class="test-radio" type="radio" id="pregunta10-relajarme" name="pregunta10" value="relajarme" required>
+                            <input class="test-radio" type="radio" id="pregunta10-relajarme" name="pregunta10" value="relajarme">
                             <label class="test-label" for="pregunta10-relajarme">Relajarme</label>
                         </div>
                         <div class="test-option">
@@ -290,7 +290,7 @@
                 </div>
 
                 <div class="test-submit-box">
-                    <button class="btn test-submit" type="button" data-bs-toggle="modal" data-bs-target="#modal-resultado-test">Ver resultado</button>
+                    <button class="btn test-submit" type="submit">Ver resultado</button>
                 </div>
             </form>
         </section>
@@ -327,5 +327,67 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.test-form');
+            const modalResultado = new bootstrap.Modal(document.getElementById('modal-resultado-test'));
+            const preguntasCard = document.querySelectorAll('.test-question');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evitamos que refresque
+
+                let faltantes = [];
+
+                preguntasCard.forEach(q => {
+                    const card = q.querySelector('.test-card');
+                    card.classList.remove('border', 'border-danger');
+                    const msgPrevio = card.querySelector('.error-mensaje');
+                    if (msgPrevio) msgPrevio.remove();
+                });
+
+                
+                for (let i = 1; i <= 10; i++) {
+                    const respondida = form.querySelector(`input[name="pregunta${i}"]:checked`);
+                    if (!respondida) {
+                        faltantes.push(i);
+                    }
+                }
+
+                if (faltantes.length === 0) {
+                    // Si está todo perfecto, abre el modal
+                    modalResultado.show();
+                } else {
+                    faltantes.forEach(num => {
+                        const qBlock = preguntasCard[num - 1];
+                        const card = qBlock.querySelector('.test-card');
+                        card.classList.add('border', 'border-danger');
+                        const title = card.querySelector('.test-question-title');
+                        const errorSpan = document.createElement('p');
+                        errorSpan.className = 'error-mensaje text-danger small mt-2 mb-0 fw-bold';
+                        errorSpan.innerText = ' Por favor, seleccioná una opción.';
+                        title.after(errorSpan);
+                    });
+
+
+                    preguntasCard[faltantes[0] - 1].scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                }
+            });
+
+            
+            form.addEventListener('change', function(e) {
+                if (e.target.classList.contains('test-radio')) {
+                    const qBlock = e.target.closest('.test-question');
+                    const card = qBlock.querySelector('.test-card');
+                    card.classList.remove('border', 'border-danger');
+                    const msg = card.querySelector('.error-mensaje');
+                    if (msg) msg.remove();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
