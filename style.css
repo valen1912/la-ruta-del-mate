@@ -27,8 +27,8 @@ body {
 .brand-title {
     font-family: var(--fuente-serif);
     color: var(--verde-oscuro) ;
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 495;
+    font-size: 1.5rem;
 }
 .custom-pill {
     background-color: var(--verde-pastilla);
