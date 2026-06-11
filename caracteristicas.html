@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características - La Ruta del Mate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand brand-title" href="index.html">La Ruta del Mate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-2">
+                    <a class="nav-link custom-pill" href="index.html">Home</a>
+                    <a class="nav-link active-pill" href="caracteristicas.html">Características</a>
+                    <a class="nav-link custom-pill" href="tips.html">Tips</a>
+                    <a class="nav-link custom-pill" href="test.html">Test</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center my-5 wrapper-caracteristicas">
+    
+    <div class="contenedor-titulo-decorado text-center">
+        <h1 class="seccion-titulo-principal">CARACTERÍSTICAS</h1>
+    </div>
+    
+    <p class="intro-text">Acá vas a encontrar todo lo que quieras saber acerca de:</p>
+
+        <div class="nav-caja-wrapper">
+            <div class="nav-caja-interna">
+                <a href="#seccion-mates" class="btn-categoria-filtro btn-mates">MATES</a>
+                <a href="#seccion-bombillas" class="btn-categoria-filtro btn-bombillas">BOMBILLAS</a>
+                <a href="#seccion-yerbas" class="btn-categoria-filtro btn-yerbas">YERBAS</a>
+            </div>
+        </div>
+
+        <section id="seccion-mates" class="bloque-seccion">
+
+            <div class="contenedor-titulo-decorado">
+                <div class="img-hoja-left">
+                    <img src="images/hojas.png" class="hojitas-decorativas" alt="Hojitas">
+                </div>
+                <h2 class="sub-titulo-barra-degrade">MATES</h2>
+            </div>
+
+
+            <div class="panel-productos-grid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto" data-bs-toggle="modal" data-bs-target="#modal-mate-acero">
+                            <div class="img-box"><img src="images/acero.png" alt="Mate de acero"></div>
+                            <p class="titulo-producto-texto">Mate de acero</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto" data-bs-toggle="modal" data-bs-target="#modal-mate-vidrio">
+                            <div class="img-box"><img src="images/vidrio.png" alt="Mate de vidrio"></div>
+                            <p class="titulo-producto-texto">Mate de vidrio</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center my-3">
+                        <div class="tarjeta-item-producto" data-bs-toggle="modal" data-bs-target="#modal-mate-plastico">
+                            <div class="img-box"><img src="images/plastico.png" alt="Mate de plástico"></div>
+                            <p class="titulo-producto-texto">Mate de plástico</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto" data-bs-toggle="modal" data-bs-target="#modal-mate-calabaza">
+                            <div class="img-box"><img src="images/calabaza.png" alt="Mate de calabaza"></div>
+                            <p class="titulo-producto-texto">Mate de calabaza</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto" data-bs-toggle="modal" data-bs-target="#modal-mate-madera">
+                            <div class="img-box"><img src="images/madera.png" alt="Mate de madera"></div>
+                            <p class="titulo-producto-texto">Mate de madera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-bombillas" class="bloque-seccion">
+
+            <div class="contenedor-titulo-decorado">
+                <div class="img-hoja-right">
+                    <img src="images/hojab.png" class="hojitas-decorativas" alt="Hojitas">
+                </div>
+                <h2 class="sub-titulo-barra-degrade">BOMBILLAS</h2>
+            </div>
+            <div class="panel-productos-grid">
+                <div class="row g-3 justify-content-between align-items-end">
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-item-producto vertical-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-bombilla-cuchara">
+                            <div class="img-box-bombilla"><img src="images/cucha.png" alt="Bombilla cuchara"></div>
+                            <p class="titulo-producto-texto text-center">Bombilla<br>cuchara</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-item-producto vertical-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-bombilla-cana">
+                            <div class="img-box-bombilla"><img src="images/cana.png" alt="Bombilla de caña"></div>
+                            <p class="titulo-producto-texto text-center">Bombilla de<br>caña</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-item-producto vertical-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-bombilla-recta">
+                            <div class="img-box-bombilla"><img src="images/recta.png" alt="Bombilla recta"></div>
+                            <p class="titulo-producto-texto text-center">Bombilla recta</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-item-producto vertical-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-bombilla-resorte">
+                            <div class="img-box-bombilla"><img src="images/resorte.png" alt="Bombilla resorte"></div>
+                            <p class="titulo-producto-texto text-center">Bombilla<br>resorte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-yerbas" class="bloque-seccion">
+
+            <div class="contenedor-titulo-decorado">
+                <div class="img-hoja-left">
+                    <img src="images/hojas.png" class="hojitas-decorativas" alt="Hojitas">
+                </div>
+                <h2 class="sub-titulo-barra-degrade">YERBAS</h2>
+            </div>
+
+            <div class="panel-productos-grid">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto square-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-yerba-suave">
+                            <div class="img-box-square"><img src="images/suave.png" alt="Yerba suave"></div>
+                            <p class="titulo-producto-texto mt-3">Yerba suave</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto square-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-yerba-intensa">
+                            <div class="img-box-square"><img src="images/intensa.png" alt="Yerba intensa"></div>
+                            <p class="titulo-producto-texto mt-3">Yerba intensa</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto square-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-yerba-sin-palo">
+                            <div class="img-box-square"><img src="images/sinpalo.png" alt="Yerba sin palo"></div>
+                            <p class="titulo-producto-texto mt-3">Yerba sin palo</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 d-flex justify-content-center">
+                        <div class="tarjeta-item-producto square-layout" data-bs-toggle="modal"
+                            data-bs-target="#modal-yerba-saborizada">
+                            <div class="img-box-square"><img src="images/saborizada.png" alt="Yerba saborizada"></div>
+                            <p class="titulo-producto-texto mt-3">Yerba saborizada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="barra-inferior-decorativa">
+    <div class="container text-center">
+        <p>© 2026 La Ruta del Mate — Todos los derechos reservados</p>
+    </div>
+</footer>
+
+
+    <div class="modal fade" id="modal-mate-acero" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Mate de acero</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Mantiene muy bien la temperatura</li>
+                        <li>Resistente y duradero</li>
+                        <li>Fácil de limpiar</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que buscan practicidad y un mate resistente para el uso diario o viajes.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Lavar y secar correctamente después de cada uso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-mate-vidrio" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Mate de vidrio</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>No altera el sabor de la yerba</li>
+                        <li>Fácil de higienizar</li>
+                        <li>Diseño moderno y minimalista</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Quienes prefieren una experiencia más limpia y sentir el sabor puro de la infusión.
+                    </p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Evitar golpes fuertes para prevenir fisuras o roturas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-mate-plastico" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Mate de plástico</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Liviano y cómodo</li>
+                        <li>Económico y resistente</li>
+                        <li>Disponible en muchos diseños y colores</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que quieren un mate práctico, económico y fácil de transportar a cualquier
+                        lado.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">No exponer de manera directa a temperaturas excesivamente altas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-mate-calabaza" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Mate de calabaza</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Es el mate más tradicional de todos</li>
+                        <li>Potencia el sabor de la yerba</li>
+                        <li>Mantiene perfectamente la temperatura</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que buscan una experiencia completamente auténtica, tradicional y con
+                        mística ritual.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Necesita ser curado rigurosamente antes del primer uso y un secado adecuado luego de
+                        usarlo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-mate-madera" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Mate de madera</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Transmite calidez orgánica al tacto</li>
+                        <li>Apariencia artesanal, única y natural</li>
+                        <li>Estilo puramente tradicional</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Quienes disfrutan de una estética rústica, clásica y aprecian los aromas que la
+                        madera aporta.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Secar correctamente boca arriba y evitar dejarlo húmedo por mucho tiempo para que no
+                        junte hongos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bombilla-cuchara" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Bombilla cuchara</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Tiene un filtro plano, ancho y perforado</li>
+                        <li>Es una de las tipologías más tradicionales</li>
+                        <li>Fácil de usar para vaciar el mate y limpiar</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que buscan una bombilla clásica, altamente eficaz y muy cómoda para el
+                        armado diario.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Lavar minuciosamente el filtro para evitar que los pequeños orificios se tapen con
+                        polvillo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bombilla-cana" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Bombilla de caña</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Fabricada íntegramente con materiales naturales</li>
+                        <li>Estilo 100% artesanal, nativo y rústico</li>
+                        <li>Extremadamente liviana y no transmite calor a los labios</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Quienes prefieren una experiencia ecológica, natural, campestre y una estética
+                        orgánica única.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Secarla perfectamente en un ambiente ventilado después de usarla para neutralizar la
+                        humedad residual.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bombilla-recta" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Bombilla recta</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Diseño lineal, simple y moderno</li>
+                        <li>Estructura muy cómoda para transportar y guardar</li>
+                        <li>Fácil de manipular y acomodar en mates pequeños</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que buscan máxima practicidad mecánica, flujo continuo y un diseño
+                        minimalista limpio.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Limpiar el conducto interior frecuentemente con escobilla para mantener un óptimo
+                        funcionamiento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bombilla-resorte" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Bombilla resorte</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Cuenta con un filtro helicoidal de resorte metálico</li>
+                        <li>Sistema totalmente removible y lavable</li>
+                        <li>Ideal para evitar por completo el paso de hojas grandes</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Quienes priorizan un mate fluido sin obstrucciones and necesitan un accesorio rápido de
+                        higienizar.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Cuidados</h3>
+                    <p class="m-0">Desarmar el resorte extensible y lavarlo con agua corriente con regularidad para
+                        evitar depósitos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-yerba-suave" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Yerba suave</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Posee un perfil de sabor más ligero y súper equilibrado</li>
+                        <li>Menor grado de intensidad química y amargor punzante</li>
+                        <li>Excelente aliada para mates duraderos y fluidos</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que recién se introducen al mundo matero o quienes sufren de acidez con
+                        marcas fuertes.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Algunas marcas</h3>
+                    <div class="marcas-grid d-flex align-items-center gap-5 mt-2">
+                        <img src="images/marca-playadito.png" alt="Playadito" title="Playadito">
+                        <img src="images/marca-union.png" alt="Unión" title="Unión">
+                        <img src="images/marca-amanda.png" alt="Taragüí Suave" title="Taragüí Suave">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-yerba-intensa" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Yerba intensa</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Sabor marcadamente fuerte, robusto y amargo tradicional</li>
+                        <li>Mayor concentración de molienda y gran durabilidad de lavado</li>
+                        <li>Mucha personalidad corpórea en cada cebada</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Materos experimentados que disfrutan de un mate con mucho carácter, retrogusto firme
+                        y cuerpo pesado.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Algunas marcas</h3>
+                    <div class="marcas-grid d-flex align-items-center gap-5  mt-2">
+                        <img src="images/marca-pampa.png" alt="Rosamonte" title="Rosamonte">
+                        <img src="images/marca-origen.png" alt="Taragüí" title="Taragüí">
+                        <img src="images/marca-lamerced.png" alt="Amanda" title="Amanda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-yerba-sin-palo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Yerba sin palo</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Compuesta casi al 100% por hojas puras trituradas (molienda tipo uruguaya)</li>
+                        <li>Sabor sumamente concentrado, denso, parejo y maduro</li>
+                        <li>Rinde muchísimos litros de agua sin perder sus propiedades</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Personas que prefieren una experiencia rústica, fuerte, duradera y una molienda fina
+                        sin residuos leñosos.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Algunas marcas</h3>
+                    <div class="marcas-grid d-flex align-items-center gap-5 mt-2">
+                        <img src="images/marca-canarias.png" alt="Canarias" title="Canarias">
+                        <img src="images/marca-baldo.png" alt="Baldo" title="Baldo">
+                        <img src="images/marca-sara.png" alt="Sara" title="Sara">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-yerba-saborizada" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <button type="button" class="btn-close-custom" data-bs-dismiss="modal">✕</button>
+                <h2 class="modal-custom-title">Yerba saborizada</h2>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Características</h3>
+                    <ul>
+                        <li>Combina equilibradamente hierbas medicinales, esencias frutales o cítricas</li>
+                        <li>Rompe completamente con el amargor clásico lineal de la yerba pura</li>
+                        <li>Otorga una refreshing sensación aromática dulce o frutal</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Recomendado para</h3>
+                    <p class="m-0">Quienes buscan refrescar las jornadas estivales, tomar tereré o explorar mezclas
+                        gourmet aromáticas.</p>
+                </div>
+                <div class="modal-inner-box">
+                    <h3 class="modal-section-title">Algunas marcas</h3>
+                    <div class="marcas-grid d-flex align-items-center gap-5  mt-2">
+                        <img src="images/marca-cbse.png" alt="CBSé" title="CBSé">
+                        <img src="images/marca-buenasysantas.png" alt="Cachamate" title="Cachamate">
+                        <img src="images/marca-cruzdemalta.png" alt="Verdeflor" title="Verdeflor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
