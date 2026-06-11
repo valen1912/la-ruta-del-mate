@@ -1,0 +1,1075 @@
+/* VARIABLES DE COLOR */
+:root {
+    --verde-oscuro: #2d5a27;       /* Color del título superior */
+    --verde-pastilla: #586756;     /* Color de los botones de navegación */
+    --verde-pastilla-hover: #8aab90;
+    --fondo-pagina: #E2E6DE;       /* Fondo general clarito */
+    --fondo-test-card: #c2d5bb;    /* Fondo verde de la tarjeta del test */
+    --texto-principal: #000000;
+    --fuente-serif: 'Playfair Display', Georgia, serif;
+    --fuente-sans: 'Plus Jakarta Sans', Arial, sans-serif;
+}
+
+/* GENERALES */
+body {
+    background-color: var(--fondo-pagina);
+    font-family: var(--fuente-sans);
+    color: var(--texto-principal);
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background: color 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.brand-title {
+    font-family: var(--fuente-serif);
+    color: var(--verde-oscuro) ;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.custom-pill {
+    background-color: var(--verde-pastilla);
+    color: #ffffff ;
+    border-radius: 20px;
+    padding: 6px 50px ;
+    text-align: center;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    min-width: 120px;
+}
+.custom-pill:hover {
+    background-color: var(--verde-pastilla-hover);
+}
+.active-pill {
+    background-color: var(--verde-pastilla-hover);
+     color: #0d3004 ;
+    border-radius: 20px;
+    padding: 6px 50px ;
+    text-align: center;
+    font-size: 1rem;
+    min-width: 120px;
+}
+
+.barra-inferior-decorativa {
+    background: linear-gradient(135deg, #586756, #586756); /* Un verde mate oscuro y elegante */
+    color: #e3e1de; /* Color cremita claro para que contraste bien */
+    padding: 25px 0;
+    width: 100%;
+    border-top: 4px solid #adc4a3; /* Una liñita verde más clara arriba como detalle */
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para el texto que vayas a meter adentro */
+.barra-inferior-decorativa p {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+}
+
+
+/* 1. Lo que comparten tanto la compu como el celu */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
+    url(images/prin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+}
+
+/* 2. EXCLUSIVO PARA CELULARES */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        background-position: left center;
+    }
+    .hero-section h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+}
+
+/* 3. EXCLUSIVO PARA COMPUTADORAS (Pantallas medianas a grandes) */
+@media (min-width: 769px) {
+    .hero-section {
+        height: 90vh;
+        background-position: center 85%;
+    }
+}
+
+.hero-title {
+    font-family: var(--fuente-Hahmlet);
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #2b2b2b;
+}
+.custom-btn-hero {
+    border-radius: 50px;
+    padding: 8px 35px;
+    border-color: #4a4a4a;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+.custom-btn-hero:hover {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+/* INTRO & CORAZÓN */
+.line-separator {
+    width: 150px;
+    height: 1.5px;
+    background-color: #8c8c8c;
+}
+.custom-heart {
+    color: #333333;
+    font-size: 1.2rem;
+}
+.intro-text p {
+    font-family: var(--fuente-serif);
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+/* FRASE DESTACADA (CADA MATE TIENE SU HISTORIA) */
+.text-quote-container {
+    background-color: rgba(194, 213, 187, 2.5); /* Desenfoque verde de fondo */
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 0 40px 20px rgba(194, 213, 187, 2.5);
+}
+.quote-text {
+    font-family: var(--fuente-serif);
+    font-size: 2.2rem;
+    color: #2c4236;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* SECCIÓN TARJETAS */
+.custom-card {
+    background-color: #ffffff ; /* Fondo blanco para la tarjeta de la montañita */
+    border-radius: 24px;                  /* Bordes más redondeados y suaves */
+    overflow: hidden;
+    border: none;
+    box-shadow: 1 10px 30px rgba(43, 72, 40, 0.329); /* Sombra suave para que flote como en Figma */
+    transition: transform 0.3s ease;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-body-custom {
+    padding: 30px 25px; /* Más aire interno */
+}
+
+/* TARJETA DEL TEST (VERDE CLARO) */
+.custom-card-green {
+
+  background-image: linear-gradient(rgba(194, 213, 187, 0.85), rgba(194, 213, 187, 0.85)), 
+      url('images/testfoto.png'); 
+  background-size: cover;
+  background-position: right 50% bottom 50%; 
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* BOTONES DE LAS TARJETAS */
+.custom-btn-green {
+    background-color: #6b8e7d;
+    color: white ;
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-size: 0.9rem;
+    border: none;
+}
+.custom-btn-green:hover {
+    background-color: #527362;
+}
+
+.custom-btn-outline-green {
+    border: 1px solid #4d6453;
+    color: #4d6453 ;
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+.custom-btn-outline-green:hover {
+    background-color: #4d6453;
+    color: white ;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.8rem; }
+    .quote-text { font-size: 1.6rem; }
+    .hero-section { text-align: center ; }
+    .hero-text-box { text-align: center ; }
+}
+
+
+/* ======================================================= */
+/* 1. SECCIÓN: ESTILOS GENERALES Y TÍTULOS                */
+/* ======================================================= */
+h1 {
+  color: #1c3421;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px rgba(163, 188, 167, 0.7); /* Efecto difuminado verde de Figma */
+  margin-bottom: 5px;
+}
+
+/* ======================================================= */
+/* 2. SECCIÓN: CUERPO DE LA PÁGINA CARACTERÍSTICAS        */
+/* ======================================================= */
+.wrapper-caracteristicas {
+    max-width: 1000px;
+}
+
+.seccion-titulo-principal {
+    background-color: (194, 213, 187, 2.5); /* Desenfoque verde de fondo */
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 0 40px 20px rgba(194, 213, 187, 2.5);
+    font-family: 'Playfair Display', serif;
+    font-weight: 8000;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #2d5a27;
+     background-color: rgba(194, 213, 187, 2.5);
+    padding: 12px 55px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2d5a27;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* --- Caja de Selección Superior --- */
+.nav-caja-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.nav-caja-interna {
+    background: linear-gradient(180deg, #cedbc9 0%, #b8cbb3 100%);
+    border: 3px solid #c2d9b6be;
+    border-radius: 20px;
+    padding: 25px 45px;
+    display: inline-flex;
+    gap: 25px;
+    box-shadow: 
+        inset 0px 4px 12px rgba(0,0,0,0.10), 
+        0px 8px 20px rgba(0,0,0,0.06);
+}
+
+/* BOTONES FILTRO: Corregidos a formato cuadrado (Figma Match) */
+.btn-categoria-filtro {
+    border-radius: 20px;       
+    width: 160px;              /* Ancho fijo */
+    height: 160px;             /* Alto idéntico al ancho para forzar el cuadrado */
+    padding: 10px;             
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.2rem;         
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s, filter 0.2s;
+
+    /* Manejo de imágenes de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #c7e3cb !important; 
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #30522ba0;
+}
+
+/* Fotos de fondo asignadas a los botones */
+.btn-mates {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('images/bg-mates.png');
+}
+.btn-bombillas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('images/bg-bombillas.png');
+}
+.btn-yerbas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('images/bg-yerbas.png');
+}
+
+.btn-categoria-filtro:hover {
+    transform: scale(1.04);
+    filter: brightness(1.15); 
+}
+
+/* --- Títulos de Secciones con Hojitas --- */
+.bloque-seccion {
+    margin-bottom: 75px;
+}
+
+.contenedor-titulo-decorado {
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+    margin-right: 60px;
+}
+.img-hoja-left{
+    position: absolute;
+    top: -67px;
+    left: 0;
+    transform: rotate(-7deg);
+}
+.img-hoja-right{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.hojitas-decorativas {
+    width: 250px;        
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;     
+}
+
+.hojitas-espacio-vacio {
+    width: 200px;        
+    flex-shrink: 0;
+}
+
+.titulo-barra-degrade,
+.sub-titulo-barra-degrade {
+    background: linear-gradient(180deg, #cbdcc4 0%, #b2c9a9 100%);
+    padding: 12px 55px;   
+    border-radius: 50px;  
+    font-family: 'Playfair Display', serif;
+    color: #3d5c36;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    text-align: center;
+    box-shadow: 
+        inset 0px -3px 6px rgba(115, 109, 109, 0.04), 
+        0px 4px 12px rgba(0,0,0,0.05);
+}
+
+/* --- Panel de Productos Principal (Gris original) --- */
+.panel-productos-grid {
+    background-color: #cbd5c8; 
+    border-radius: 35px;
+    padding: 60px 45px;
+    border: 1px solid #b9c5b5;
+    box-shadow: 
+        inset 0px 5px 15px rgba(0,0,0,0.07), 
+        0px 12px 35px rgba(0,0,0,0.12); 
+}
+
+.tarjeta-item-producto {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+.tarjeta-item-producto:hover {
+    transform: translateY(-6px);
+}
+
+.img-box {
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.img-box img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Formatos de Bombilla */
+.vertical-layout .img-box-bombilla {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.vertical-layout .img-box-bombilla img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* Formatos de Yerba */
+.square-layout .img-box-square {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+.square-layout .img-box-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-producto-texto {
+    font-family: 'Playfair Display', serif;
+    color: #1a3c14;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.barra-inferior-decorativa {
+    background-color: #a4b59f;
+    height: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* ======================================================= */
+/* 3. SECCIÓN: ESTILOS DE LOS MODALES POP-UP               */
+/* ======================================================= */
+.modal-custom-bg {
+    background-color: #8fa88c !important; 
+    border-radius: 25px !important;
+    padding: 50px !important;
+}
+.modal-custom-title {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.btn-close-custom {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: 2px solid #233b1e;
+    color: #233b1e;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1px 9px;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn-close-custom:hover {
+    background-color: #233b1e;
+    color: #8fa88c;
+}
+.modal-inner-box {
+    background-color: #cbd7c7; 
+    border-radius: 18px;
+    padding: 15px 22px;
+    margin-bottom: 16px;
+    color: #233b1e;
+    text-align: left;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: inset 0px 2px 6px rgba(0,0,0,0.03);
+}
+.modal-section-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1c3317;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-color: #1c3317;
+    text-decoration-thickness: 2px;
+    margin-bottom: 12px;
+}
+.modal-inner-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+.modal-inner-box li {
+    margin-bottom: 4px;
+}
+
+/* ======================================================= */
+/* 4. SECCIÓN: ESTILOS EXCLUSIVOS PÁGINA TIPS              */
+/* ======================================================= */
+
+.wrapper-tips {
+    max-width: 1100px;
+}
+
+
+.intro-subtext-tips {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2d5a27;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-top: -10px;
+    margin-bottom: 40px;
+   ;
+}
+
+/* --- Adaptación de títulos con hojitas laterales --- */
+.hojitas-decorativas-tips {
+    width: auto;
+    height: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.hojitas-espacio-vacio-tips {
+    width: 140px; /* Sostiene el balance simétrico del título de Figma */
+    flex-shrink: 0;
+}
+
+/* --- Tarjetas de los 6 Consejos Superiores (Efecto Flip) --- */
+
+/* Contenedor externo: Define la altura fija e idéntica para todas y la perspectiva 3D */
+.tarjeta-flip-contenedor {
+    background-color: transparent;
+    height: 290px; /* Al dejarlas fijas acá, quedan todas perfectamente alineadas */
+    perspective: 1000px; /* Da el efecto de profundidad al girar */
+}
+
+/* La caja interna que efectivamente realiza la rotación física */
+.tarjeta-consejo-figma {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Giro suave y prolijo */
+    transform-style: preserve-3d; /* Obligatorio para que las caras actúen en 3D */
+}
+
+/* El disparador: Cuando pasamos el mouse, la tarjeta interna rota 180 grados */
+.tarjeta-flip-contenedor:hover .tarjeta-consejo-figma {
+    transform: rotateY(180deg);
+}
+
+/* Reglas comunes para ambas caras (Frente y Atrás) */
+.cara-tarjeta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; /* Esconde la espalda de la cara para que no se trasluzca */
+    border-radius: 25px;
+    padding: 35px 25px;
+    border: 1px solid #b9c5b5;
+    box-shadow: 
+        inset 0px 4px 10px rgba(0,0,0,0.05), 
+        0px 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente para que quede perfecto */
+    align-items: center;
+}
+
+/* Estilos específicos de la cara del FRENTE */
+.cara-frente {
+    background-color: #cbd5c8; /* Tu color gris-verdoso base */
+    color: #1a3c14;
+}
+
+/* Estilos específicos de la cara de ATRÁS */
+.cara-atras {
+    background-color: #b9c5b5; /* Un tono apenas más oscurito para dar contraste al girar */
+    transform: rotateY(180deg); /* Arranca dada vuelta por defecto */
+    align-items: flex-start; /* Alinea la lista de tips a la izquierda para leer bien */
+    text-align: left;
+}
+
+/* --- Elementos internos --- */
+
+.icono-consejo-contenedor {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icono-consejo-contenedor img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.titulo-consejo {
+    font-family: 'Playfair Display', serif;
+    color: #1a3c14;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.lista-consejo-items {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1a3c14; /* Color oscuro legible */
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-consejo-items li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+/* --- Tarjetas del Paso a Paso Montañita (Abajo) --- */
+.tarjeta-paso-figma {
+    background-color: #cbd5c8;
+    border-radius: 25px;
+    padding: 25px 20px;
+    width: 5%;
+    max-width: 20px;
+    position: relative; 
+    border: 1px solid #b9c5b5;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+
+.tarjeta-paso-figma:hover {
+    transform: translateY(-10px); /* Sube 10 píxeles */
+    box-shadow: 0px 22px 35px rgba(30, 53, 26, 0.15); /* Sombra más grande con un tinte oscuro de tu paleta */
+    border-color: #9fb09a; /* El borde se oscurece sutilmente */
+}
+
+/* El círculo del número (Badge verde oliva oscuro) */
+.numero-badge-paso {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: #50654b; /* Color de tus círculos numéricos */
+    color: #ffffff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+
+    
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+
+.tarjeta-paso-figma:hover .numero-badge-paso {
+    transform: scale(1.18) rotate(-8deg); /* Se agranda y rota a la izquierda */
+    background-color: #2b3b27; /* Cambia a un verde más oscurito para dar contraste */
+}
+
+/* Recuadro interno para la foto real */
+.contenedor-foto-real-paso {
+    background-color: #a3af97; /* Fondo claro de la foto */
+    width: 80%;
+    height: 140px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid #c8d4bf;
+}
+
+.foto-real-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; 
+
+    
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.tarjeta-paso-figma:hover .foto-real-img {
+    transform: scale(1.19); 
+}
+
+.titulo-paso-real {
+    font-family: 'Playfair Display', serif;
+    color: #1a3c14;
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.desc-paso-real {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #3b5237;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+.fila-pasos-montanita {
+    max-width: 900px;       
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fila-pasos-montanita .tarjeta-paso-figma {
+    width: 100%;            
+    max-width: 320px;       
+    margin: 0;
+}
+
+
+.fila-pasos-montanita > [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* SECCION TEST */
+.test-hero {
+    position: relative;
+    padding: 80px 0 120px;
+    background-color: var(--fondo-pagina);
+    overflow: visible;
+}
+
+.test-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* 1. Volvemos al contenedor el "ancla" para que la hoja no se vaya a cualquier parte de la pantalla */
+.test-hero-scene {
+    position: relative;
+}
+
+/* 2. Le damos superpoderes a la hoja para moverla a gusto */
+.test-hero-leaves {
+    position: absolute;
+    
+
+    top: -200px;       
+    right: -200px;     
+    
+    width: 800px;    
+    height: auto;
+    transform: rotate(70deg);
+    z-index: -100;     
+    pointer-events: none; 
+    @media (max-width: 900px) {
+
+    .test-hero-leaves {
+        width: 900px;     /* Reducimos el monstruo de 800px a un tamaño apto para celu */
+        top: -900px;       /* Al ser más chica, la acercamos más al borde para que se vea */
+        right: -30000px;    /* La acomodamos a la derecha del fondo mobile */
+        transform: rotate(-185deg); /* Mantenemos una rotación parecida pero cómoda */
+    }
+}
+
+}
+
+.test-hero-title-box {
+    background-color: #dfe7dc;
+    border-radius: 18px;
+    width: 370px;
+    padding: 40px 32px;
+    box-shadow: 0 0 18px rgba(43, 72, 40, 0.90);
+}
+
+.test-hero-title-box h1 {
+    font-family: var(--fuente-serif);
+    color: #55715e;
+    font-size: 2.3rem;
+    line-height: 1.3;
+    font-weight: 620;
+    margin: 0;
+}
+
+.test-hero-text p {
+    color: #2d5a27;
+    font-weight: 650;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    max-width: 350px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.test-btn-start {
+    border: 3px solid #6f876f;
+    color: #6f9a67;
+    background-color: #d7dfd2;
+    border-radius: 50px;
+    padding: 7px 28px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.test-btn-start:hover {
+    background-color: #cbd8c6;
+    color: #5f895b;
+}
+
+.test-main {
+    padding-bottom: 90px;
+}
+
+.test-title {
+    display: block;
+    width: fit-content;
+    font-family: var(--fuente-serif);
+    color: #40583f;
+    background-color: #c2d5bb;
+    box-shadow: 0 0 15px 18px rgba(194, 213, 187, 100);
+    padding: 0 130px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 70px auto 55px;
+}
+    
+.test-form {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.test-question {
+    margin-bottom: 70px;
+}
+
+.test-progress {
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 40px 0 -40px 12px; 
+}
+
+.test-card {
+    background-color: #d1d5ce;
+    border: none;
+    border-radius: 14px;
+    padding: 18px 22px 16px;
+}
+
+.test-question-title {
+    float: none;
+    width: 100%;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 65px
+}
+
+.test-option {
+    margin-bottom: 9px;
+}
+
+.test-radio {
+    position: absolute;
+    opacity: 0;
+}
+
+.test-label {
+    display: block;
+    width: 100%;
+    background-color: #b2c1b0;
+    border-radius: 9px;
+    padding: 5px 12px;
+    color: #111;
+    font-weight: 800;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.test-radio:checked + .test-label,
+.test-label:hover {
+    background-color: #6b8e7d;
+    color: white;
+}
+
+.test-submit-box {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.test-submit {
+    background-color: #bbd2ad;
+    color: #40512d;
+    border-radius: 12px;
+    padding: 14px 24px;
+    font-family: var(--fuente-serif);
+    font-weight: 800;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.12);
+}
+
+.test-submit:hover {
+    background-color: #a7bd9f;
+    color: #2d5a27;
+}
+
+#modal-resultado-test .modal-header {
+    position: relative;
+    justify-content: center;
+    border-bottom: none;
+    padding-top: 70px;
+    padding-bottom: 18px;
+}
+
+#modal-resultado-test .modal-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: #2d3a2d ;
+    font-weight: 550;
+}
+
+#modal-resultado-test .btn-close {
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    right: auto;
+    margin: 0;
+}
+
+#modal-resultado-test .test-result-name {
+    position: relative;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    background-color: #c2d5bb;
+    box-shadow: 0 0 15px 18px rgba(194, 213, 187, 100);
+    color: #0b4f16;
+    font-family: var(--fuente-serif);
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 24px;
+    padding: 0;
+    margin-top: -15px;
+}
+
+#modal-resultado-test .test-result-mate-img {
+    width: 300px;
+    margin-top: 60px;
+    margin-bottom: -3px;
+    margin-right: 100px;
+    margin-left: 12px;
+}
+
+#modal-resultado-test .test-result-mate-bg {
+    display: inline-block;
+    background-color: #c2d5bb;
+    border-radius: 20px;
+    padding: 0 18px;
+    height: 420px;
+    position: relative;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+
+#modal-resultado-test .modal-body {
+    padding-top: 24px;
+}
+
+#modal-resultado-test .modal-dialog {
+    max-width: 650px;
+
+}
+
+#modal-resultado-test .modal-content {
+    background-color: #a6c0a3;
+    border-radius: 25px;
+    box-shadow: inset 0 0 18px rgba(47, 74, 45, 0.35), 0 0 18px rgba(47, 74, 45, 0.45);
+    min-height: 700px;
+}
+
+#modal-resultado-test .test-result-leaves-img {
+    width: 700px;
+    max-width: none;
+    margin-top: -180px;
+    margin-left: -138px;
+    transform: rotate(-20deg);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+@media (max-width: 768px) {
+    .test-hero {
+        padding: 45px 0 35px;
+    }
+
+    .test-hero-leaves {
+        top: 10px;
+        left: 52%;
+        right: auto;
+        width: 48%;
+        min-width: 260px;
+    }
+
+    .test-hero-title-box h1 {
+        font-size: 1.9rem;
+    }
+
+    .test-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .test-question {
+        margin-bottom: 45px;
+    }
+}
+
+
